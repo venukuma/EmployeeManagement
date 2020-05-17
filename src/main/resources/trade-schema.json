@@ -1,0 +1,190 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "required": [
+        "empDOB",
+        "empDOJ",
+        "empFirstname",
+        "empGender",
+        "empLastName",
+        "empMail",
+        "empSalary",
+        "empTitle",
+        "phoneNumber",
+        "empAddress"
+    ],
+    "additionalProperties": true,
+    "properties": {
+        "empDOB": {
+            "$id": "#/properties/empDOB",
+            "type": "string",
+            "title": "The empDOB schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "1992-11-17"
+            ]
+        },
+        "empDOJ": {
+            "$id": "#/properties/empDOJ",
+            "type": "string",
+            "title": "The empDOJ schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "2016-02-05"
+            ]
+        },
+        "empFirstname": {
+            "$id": "#/properties/empFirstname",
+            "type": "string",
+            "title": "The empFirstname schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Venu"
+            ]
+        },
+        "empGender": {
+            "$id": "#/properties/empGender",
+            "type": "string",
+            "title": "The empGender schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "M"
+            ]
+        },
+        "empLastName": {
+            "$id": "#/properties/empLastName",
+            "type": "string",
+            "title": "The empLastName schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Johns"
+            ]
+        },
+        "empMail": {
+            "$id": "#/properties/empMail",
+            "type": "string",
+            "title": "The empMail schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "venumaddela@gmail.com"
+            ]
+        },
+        "empSalary": {
+            "$id": "#/properties/empSalary",
+            "type": "string",
+            "title": "The empSalary schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "10000"
+            ]
+        },
+        "empTitle": {
+            "$id": "#/properties/empTitle",
+            "type": "string",
+            "title": "The empTitle schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Developer"
+            ]
+        },
+        "phoneNumber": {
+            "$id": "#/properties/phoneNumber",
+            "type": "string",
+            "title": "The phoneNumber schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "9948166622"
+            ]
+        },
+        "empAddress": {
+            "$id": "#/properties/empAddress",
+            "type": "object",
+            "title": "The empAddress schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "streetName": "1st lane",
+                    "LineName": "2nd Line",
+                    "city": "city",
+                    "country": "country",
+                    "state": "state"
+                }
+            ],
+            "required": [
+                "LineName",
+                "city",
+                "country",
+                "state",
+                "streetName"
+            ],
+            "additionalProperties": true,
+            "properties": {
+                "LineName": {
+                    "$id": "#/properties/empAddress/properties/LineName",
+                    "type": "string",
+                    "title": "The LineName schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "2nd Line"
+                    ]
+                },
+                "city": {
+                    "$id": "#/properties/empAddress/properties/city",
+                    "type": "string",
+                    "title": "The city schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "city"
+                    ]
+                },
+                "country": {
+                    "$id": "#/properties/empAddress/properties/country",
+                    "type": "string",
+                    "title": "The country schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "country"
+                    ]
+                },
+                "state": {
+                    "$id": "#/properties/empAddress/properties/state",
+                    "type": "string",
+                    "title": "The state schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "state"
+                    ]
+                },
+                "streetName": {
+                    "$id": "#/properties/empAddress/properties/streetName",
+                    "type": "string",
+                    "title": "The streetName schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "1st lane"
+                    ]
+                }
+            }
+        }
+    }
+}
+
